@@ -1427,6 +1427,22 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF37701850": {
+    "contest_id": 879,
+    "language": "GNU C++11",
+    "path": "codeforces/879/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Borya's Diagnosis",
+    "problem_url": "https://codeforces.com/contest/879/problem/A",
+    "submission_id": "CF37701850",
+    "submission_url": "https://codeforces.com/contest/879/submission/37701850",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Apr/29/2018 12:42"
+  },
   "CF37940963": {
     "contest_id": 977,
     "language": "GNU C++11",
