@@ -1427,6 +1427,23 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF42207250": {
+    "contest_id": 122,
+    "language": "GNU C++11",
+    "path": "codeforces/122/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Lucky Division",
+    "problem_url": "https://codeforces.com/contest/122/problem/A",
+    "submission_id": "CF42207250",
+    "submission_url": "https://codeforces.com/contest/122/submission/42207250",
+    "tags": [
+      "brute force",
+      "number theory",
+      "*1000"
+    ],
+    "timestamp": "Aug/28/2018 18:18"
+  },
   "CF42242918": {
     "contest_id": 1015,
     "language": "GNU C++11",
