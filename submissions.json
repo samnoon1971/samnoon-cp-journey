@@ -1427,6 +1427,22 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF42246508": {
+    "contest_id": 1013,
+    "language": "GNU C++11",
+    "path": "codeforces/1013/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Piles With Stones",
+    "problem_url": "https://codeforces.com/contest/1013/problem/A",
+    "submission_id": "CF42246508",
+    "submission_url": "https://codeforces.com/contest/1013/submission/42246508",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Aug/29/2018 21:36"
+  },
   "CF42246825": {
     "contest_id": 1009,
     "language": "GNU C++11",
