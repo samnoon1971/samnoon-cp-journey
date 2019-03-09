@@ -1427,6 +1427,23 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF51099822": {
+    "contest_id": 1110,
+    "language": "GNU C++17",
+    "path": "codeforces/1110/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Tape",
+    "problem_url": "https://codeforces.com/contest/1110/problem/B",
+    "submission_id": "CF51099822",
+    "submission_url": "https://codeforces.com/contest/1110/submission/51099822",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Mar/10/2019 00:25"
+  },
   "CF51123153": {
     "contest_id": 719,
     "language": "GNU C++17",
