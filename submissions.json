@@ -1427,6 +1427,23 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF51081249": {
+    "contest_id": 752,
+    "language": "GNU C++17",
+    "path": "codeforces/752/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Santa Claus and a Place in a Class",
+    "problem_url": "https://codeforces.com/contest/752/problem/A",
+    "submission_id": "CF51081249",
+    "submission_url": "https://codeforces.com/contest/752/submission/51081249",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Mar/09/2019 17:22"
+  },
   "CF51090845": {
     "contest_id": 752,
     "language": "GNU C++17",
