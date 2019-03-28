@@ -1427,6 +1427,22 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF51931175": {
+    "contest_id": 1092,
+    "language": "GNU C++17",
+    "path": "codeforces/1092/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Uniform String",
+    "problem_url": "https://codeforces.com/contest/1092/problem/A",
+    "submission_id": "CF51931175",
+    "submission_url": "https://codeforces.com/contest/1092/submission/51931175",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Mar/28/2019 16:27"
+  },
   "CF51950060": {
     "contest_id": 903,
     "language": "GNU C++17",
