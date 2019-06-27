@@ -1427,6 +1427,23 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF56178244": {
+    "contest_id": 635,
+    "language": "GNU C++17",
+    "path": "codeforces/635/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Orchestra",
+    "problem_url": "https://codeforces.com/contest/635/problem/A",
+    "submission_id": "CF56178244",
+    "submission_url": "https://codeforces.com/contest/635/submission/56178244",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Jun/28/2019 02:39"
+  },
   "CF64087398": {
     "contest_id": 1251,
     "language": "GNU C++17",
