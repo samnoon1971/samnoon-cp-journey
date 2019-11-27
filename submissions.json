@@ -1427,6 +1427,24 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF65799021": {
+    "contest_id": 858,
+    "language": "GNU C++17",
+    "path": "codeforces/858/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Did you mean...",
+    "problem_url": "https://codeforces.com/contest/858/problem/C",
+    "submission_id": "CF65799021",
+    "submission_url": "https://codeforces.com/contest/858/submission/65799021",
+    "tags": [
+      "dp",
+      "greedy",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Nov/27/2019 12:34"
+  },
   "CF66134534": {
     "contest_id": 1263,
     "language": "GNU C++17",
