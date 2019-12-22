@@ -1427,6 +1427,22 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF67443523": {
+    "contest_id": 1227,
+    "language": "GNU C++17",
+    "path": "codeforces/1227/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Math Problem",
+    "problem_url": "https://codeforces.com/contest/1227/problem/A",
+    "submission_id": "CF67443523",
+    "submission_url": "https://codeforces.com/contest/1227/submission/67443523",
+    "tags": [
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Dec/23/2019 02:35"
+  },
   "CF67444246": {
     "contest_id": 1262,
     "language": "GNU C++17",
