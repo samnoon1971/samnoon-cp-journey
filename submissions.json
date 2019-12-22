@@ -1427,6 +1427,22 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF67444246": {
+    "contest_id": 1262,
+    "language": "GNU C++17",
+    "path": "codeforces/1262/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Box",
+    "problem_url": "https://codeforces.com/contest/1262/problem/B",
+    "submission_id": "CF67444246",
+    "submission_url": "https://codeforces.com/contest/1262/submission/67444246",
+    "tags": [
+      "constructive algorithms",
+      "*1200"
+    ],
+    "timestamp": "Dec/23/2019 03:00"
+  },
   "CF67464304": {
     "contest_id": 294,
     "language": "GNU C++17",
