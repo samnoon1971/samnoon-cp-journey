@@ -1427,6 +1427,25 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF70773698": {
+    "contest_id": 1284,
+    "language": "GNU C++17",
+    "path": "codeforces/1284/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "New Year and Conference",
+    "problem_url": "https://codeforces.com/contest/1284/problem/D",
+    "submission_id": "CF70773698",
+    "submission_url": "https://codeforces.com/contest/1284/submission/70773698",
+    "tags": [
+      "binary search",
+      "data structures",
+      "hashing",
+      "sortings",
+      "*2100"
+    ],
+    "timestamp": "Feb/11/2020 14:02"
+  },
   "CF70788550": {
     "contest_id": 1269,
     "language": "GNU C++17",
