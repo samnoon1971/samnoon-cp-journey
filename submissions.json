@@ -1427,6 +1427,24 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF83368280": {
+    "contest_id": 149,
+    "language": "GNU C++17",
+    "path": "codeforces/149/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Division into Teams",
+    "problem_url": "https://codeforces.com/contest/149/problem/C",
+    "submission_id": "CF83368280",
+    "submission_url": "https://codeforces.com/contest/149/submission/83368280",
+    "tags": [
+      "greedy",
+      "math",
+      "sortings",
+      "*1500"
+    ],
+    "timestamp": "Jun/11/2020 15:47"
+  },
   "CF83464310": {
     "contest_id": 1366,
     "language": "GNU C++17",
