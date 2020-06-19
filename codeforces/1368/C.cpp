@@ -78,37 +78,19 @@ int main()
     {
         ll n;
         cin >> n;
-        ll cnt = 0, i = 2;
-        set <pair<ll, ll> > mps;
-        while(cnt <= n)
+        n++;
+        vector <pair<ll, ll> > vec;
+        for(ll i=0; i<n; i++)
         {
-            cnt++;
-            if(i%2==0)
-            {
-                mps.insert({i, i});
-                mps.insert({i-1, i});
-                mps.insert({i-1, i+2});
-                mps.insert({i-2, i});
-                mps.insert({i-2, i+1});
-                mps.insert({i-2, i+2});
-                mps.insert({i, i+1});
-                mps.insert({i, i+2});
-            }
-            else
-            {
-                mps.insert({i, i});
-                mps.insert({i+1, i});
-                mps.insert({i+1, i-2});
-                mps.insert({i+2, i});
-                mps.insert({i+2, i-1});
-                mps.insert({i+2, i-2});
-                mps.insert({i, i-1});
-                mps.insert({i, i-2});
-            }
-            i += 2;
+            ll x = i, y = i;
+            ll ux = x + 1, dy = y + 1;
+            vec.push_back({x, y});
+            vec.push_back({ux, y});
+            vec.push_back({x, dy});
         }
-        cout << mps.size() << endl;
-        for(auto i:mps)
+        vec.push_back({n, n});
+        cout << vec.size() << endl;
+        for(auto i:vec)
         {
             cout << i.first << " " << i.second << endl;
         }
