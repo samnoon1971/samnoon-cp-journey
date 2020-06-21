@@ -67,42 +67,45 @@ void err(istream_iterator<string> it, T a, Args... args)
 ///
 
 ///--------------------**********----------------------------------
-const ll N = 2e5+10;
-ll a[N];
-bool check(ll x, ll n, ll k)
-{
-    ll cnt = 0;
-    for(ll i=1; i<=n; i++)
-    {
-        if(a[i] <= x)
-        {
-            cnt++;
-            if(i<n)
-            {
-                cnt++;
-                i++;
-            }
-        }
-    }
-    if(cnt >= k)
-        return true;
 
-    cnt = 1;
-    for(ll i=2; i<=n; i++)
+
+bool isOk(ll a[], ll mid, ll p, ll n, ll k)
+{
+    ll ans = 0;
+    for(ll i=0; i<n; i++)
     {
-        if(a[i] <= x)
+        if(!p)
         {
-            cnt++;
-            if(i<n)
+            p ^= 1;
+            ans++;
+        }
+        else
+        {
+            if(a[i] <= mid)
             {
-                cnt++;
-                i++;
+                p ^= 1;
+                ans++;
             }
         }
     }
-    if(cnt >= k)
-        return true;
-    return false;
+    return ans >= k;
+}
+ll check(ll a[], ll lb, ll ub, ll n, ll k)
+{
+    while(lb < ub)
+    {
+        ll mid = (lb + ub) >> 1;
+       // error(lb, ub, mid);
+        if(isOk(a, mid, 0, n, k) || isOk(a, mid, 1, n, k))
+        {
+            ub = mid;
+        }
+        else
+        {
+            lb = mid + 1;
+        }
+    }
+    return lb;
 }
 int main()
 {
@@ -112,30 +115,16 @@ int main()
     t = 1;
     while(t--)
     {
-
         ll n, k;
         cin >> n >> k;
-        for(ll i=1; i<=n; i++)
+        ll a[n];
+        for(ll i=0; i<n; i++)
         {
             cin >> a[i];
         }
-        ll ans = 0;
         ll lb = 1, ub = 1e9;
-        while(lb <= ub)
-        {
-            ll mid = (lb + ub) >> 1;
-            if(check(mid, n, k))
-            {
-                ans = mid;
-                ub = mid - 1;
-            }
-            else
-            {
-                lb = mid + 1;
-            }
-        }
+        ll ans = check(a, lb, ub, n, k);
         cout << ans << endl;
-
     }
     return 0;
 }
