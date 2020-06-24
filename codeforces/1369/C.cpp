@@ -78,7 +78,7 @@ int main()
     {
         ll n, k;
         cin >> n >> k;
-        vector <ll> a(n), b(k);
+        vector <ll> a(n), b(k), c;
         for(ll i=0; i<n; i++)
         {
             cin >> a[i];
@@ -89,21 +89,31 @@ int main()
         }
         ll sum = 0;
         sort(a.begin(), a.end());
-        sort(b.begin(), b.end());
         for(ll i=0; i<k; i++)
         {
-            if(b[i]==1)
-              sum += 2 * a[n-i-1];
-            else sum += a[n-i-1];
-            b[i]--;
+            if(b[i] == 1)
+            {
+                sum += a.back() * 2;
+                a.pop_back();
+            }
+            else
+            {
+                c.push_back(b[i]);
+            }
         }
-        reverse(b.begin(), b.end());
-        for(ll i=0, j=0; i<k; i++)
+        sort(c.rbegin(), c.rend());
+        ll m = c.size();
+        for(ll i=0; i<m; i++)
         {
-            if(b[i] == 0)
-                continue;
+            sum += a.back();
+            a.pop_back();
+        }
+        ll i = 0, j = 0;
+        while(i<m)
+        {
             sum += a[j];
-            j += b[i];
+            j += c[i] - 1;
+            i++;
         }
         cout << sum << endl;
     }
