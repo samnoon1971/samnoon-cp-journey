@@ -67,7 +67,7 @@ void err(istream_iterator<string> it, T a, Args... args)
 ///
 
 ///--------------------**********----------------------------------
-ll solve(vector <ll> vec)
+ll kadane(vector <ll> vec)
 {
     ll mxSoFar = LONG_MIN, mxEndHere = 0;
     ll lb = 0, ub = 0, s = 0, n = vec.size();
@@ -117,7 +117,7 @@ int main()
         {
             vy.push_back(a[i] - a[i-1]);
         }
-        ans += max3(0LL, solve(vx), solve(vy));
+        ans += max3(0LL, kadane(vx), kadane(vy));
         cout << ans << endl;
     }
     return 0;
