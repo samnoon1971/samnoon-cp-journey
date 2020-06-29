@@ -84,11 +84,10 @@ int main()
       {
           ll x;
           cin >> x;
-          if(x % k == 0)
+          x = x % k;
+          if(!x)
             continue;
-          mp[k - x % k]++;
-          ll cnt = k * (mp[k - x % k] - 1) + k - x % k + 1;
-          ans = max(ans, cnt);
+          ans = max(ans,  ++mp[x] * k  - x + 1);
       }
       cout <<  ans  << endl;
 
