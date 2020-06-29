@@ -68,8 +68,14 @@ void err(istream_iterator<string> it, T a, Args... args)
 
 ///--------------------**********----------------------------------
 
-void solve()
+int main()
 {
+    samnoon;
+    ll t;
+    cin >> t;
+   // t = 1;
+    while(t--)
+    {
       ll n, a, b;
       cin >> n >> a >> b;
       ll x = 0, y = 0;
@@ -93,17 +99,6 @@ void solve()
       {
           cout << "NO" << endl;
       }
-
-}
-int main()
-{
-    samnoon;
-    ll t;
-    cin >> t;
-   // t = 1;
-    while(t--)
-    {
-        solve();
     }
     return 0;
 }
