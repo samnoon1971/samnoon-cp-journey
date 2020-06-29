@@ -87,9 +87,12 @@ int main()
           x = x % k;
           if(!x)
             continue;
-          ans = max(ans,  ++mp[x] * k  - x + 1);
+          x = k - x;
+          mp[x]++;
+          ll cnt = x + (mp[x] - 1) * k;
+          ans = max(ans, cnt);
       }
-      cout <<  ans  << endl;
+      cout <<  ans + !mp.empty() << endl;
 
     }
     return 0;
