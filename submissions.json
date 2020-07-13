@@ -1427,6 +1427,24 @@
     ],
     "timestamp": "Apr/26/2022 01:07"
   },
+  "CF86747511": {
+    "contest_id": 361,
+    "language": "GNU C++17",
+    "path": "codeforces/361/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Levko and Permutation",
+    "problem_url": "https://codeforces.com/contest/361/problem/B",
+    "submission_id": "CF86747511",
+    "submission_url": "https://codeforces.com/contest/361/submission/86747511",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory",
+      "*1200"
+    ],
+    "timestamp": "Jul/13/2020 18:36"
+  },
   "CF86830501": {
     "contest_id": 1380,
     "language": "GNU C++17",
