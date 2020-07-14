@@ -68,9 +68,18 @@ void err(istream_iterator<string> it, T a, Args... args)
 
 ///--------------------**********----------------------------------
 
-void solve()
+
+
+int main()
 {
-     string s;
+    samnoon;
+    ll t;
+    cin >> t;
+    //t = 1;
+
+    while(t--)
+    {
+        string s;
         cin >> s;
         map <char, char> mps;
         map <char, ll> cnt;
@@ -100,19 +109,6 @@ void solve()
             cout << mps[c];
         }
         cout << endl;
-}
-
-
-int main()
-{
-    samnoon;
-    ll t;
-    cin >> t;
-    //t = 1;
-
-    while(t--)
-    {
-       solve();
     }
     return 0;
 }
