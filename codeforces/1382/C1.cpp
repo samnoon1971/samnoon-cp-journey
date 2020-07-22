@@ -80,23 +80,22 @@ int main()
     {
       ll n;
       cin >> n;
-      queue <ll> q;
       string a, b;
       cin >> a >> b;
+      vector <ll> vec;
       for(ll i=0; i<n; i++)
       {
-          if(a[i] != b[i])
+          if(a[n-i-1] != b[n-i-1])
           {
-              q.push(i + 1);
-              q.push(1);
-              q.push(i + 1);
+              vec.push_back(n-i);
+              vec.push_back(1);
+              vec.push_back(n-i);
           }
       }
-      cout << q.size() << " ";
-      while(!q.empty())
+      cout << vec.size() << " ";
+      for(auto i:vec)
       {
-          cout << q.front() << " ";
-          q.pop();
+          cout << i << " ";
       }
       cout << endl;
     }
