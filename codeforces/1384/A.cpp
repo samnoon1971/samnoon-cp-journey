@@ -67,13 +67,15 @@ void err(istream_iterator<string> it, T a, Args... args)
 ///
 
 ///--------------------**********----------------------------------
-const ll N = 200;
+
+
+
 int main()
 {
     samnoon;
     ll t;
     cin >> t;
-    //t = 1;
+   // t = 1;
 
     while(t--)
     {
@@ -84,15 +86,31 @@ int main()
         {
             cin >> a[i];
         }
-        string s(N, 'a');
-        cout << s << endl;
+        vector <string> vec(n+1);
+        for(ll i=0; i<=n; i++)
+        {
+            string s;
+            for(ll j=0; j<50; j++)
+            {
+                s += (char) (j%26 + 'a');
+            }
+            vec[i] = s;
+            //cout << s << endl;
+        }
         for(ll i=0; i<n; i++)
         {
             ll pos = a[i];
-            if(s[pos] == 'a')
-                s[pos] = 'b';
-            else s[pos] = 'a';
-            cout << s << endl;
+            for(ll j=0; j<pos; j++)
+            {
+                vec[i+1][j] = vec[i][j];
+            }
+            ll cx = vec[i][pos] - 'a';
+            ll cy = (cx + 1)%26;
+            vec[i+1][pos] = (char) (cy + 'a');
+        }
+        for(auto i:vec)
+        {
+            cout << i << endl;
         }
     }
     return 0;
