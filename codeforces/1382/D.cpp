@@ -73,8 +73,7 @@ const ll N = 4100;
 #define EMPTY_VALUE -1
 ll dp[N][N], a[N], index[N], n, m, cost;
 vector <ll> vec;
-
-ll evaluate_table(ll i, ll w)
+ll solve(ll i, ll w)
 {
     if(w < 0)
         return INF;
@@ -84,7 +83,12 @@ ll evaluate_table(ll i, ll w)
             return 0;
         return INF;
     }
-    return dp[i][w];
+    ll &ret = dp[i][w];
+    if(ret != EMPTY_VALUE)
+        return ret;
+    ll res_1 = solve(i + 1, w - vec[i]);
+    ll res_2 = solve(i+1, w);
+    return ret = min(res_1, res_2);
 }
 int main()
 {
@@ -119,22 +123,14 @@ int main()
               dp[i][j] = EMPTY_VALUE;
           }
       }
-      for(ll i=m; i>=0; i--)
-      {
-          for(ll w=0; w<=cost; w++)
-          {
-              dp[i][w] = min(1 + evaluate_table(i + 1, w - vec[i]), evaluate_table(i + 1, w));
-          }
-      }
-      if(dp[0][cost] != INF)
-      {
-          cout << "YES" << endl;
-      }
-      else
+      if(solve(0, cost) == INF)
       {
           cout << "NO" << endl;
       }
-
+      else
+      {
+          cout << "YES" << endl;
+      }
     }
     return 0;
 }
