@@ -126,52 +126,52 @@ struct disjoint{
     	}
 };
 
-
 int main()
 {
     samnoon;
     ll t;
-    t = 1;
+    // t = 1;
     cin >> t;
     while(t--)
     {
-       string s;
-       cin >> s;
-       map <pair<pair<ll, ll>, pair<ll, ll> >, ll > mps;
-       ll n = s.size(), res = 0;
-       pair<ll, ll> pre = mp(0, 0);
-       for(ll i=0; i<n; i++)
-       {
-           pair<ll, ll> cur = pre;
-           if(s[i] == 'E')
-           {
-               cur.first++;
-           }
-           else if(s[i] == 'W')
-           {
-               cur.first--;
-           }
-           else if(s[i] == 'N')
-           {
-               cur.second++;
-           }
-           else
-           {
-               cur.second--;
-           }
-           if(mps[mp(pre, cur)] or mps[mp(cur, pre)])
-           {
-               res++;
-           }
-           else
-           {
-               res += 5;
-           }
-           mps[mp(pre, cur)] = 1;
-           mps[mp(cur, pre)] = 1;
-           pre = cur;
-       }
-       cout << res << endl;
+        string s;
+        cin >> s;
+        set <pair<pair<ll, ll>, pair<ll, ll> > > mps;
+        ll n = s.size();
+        ll sum = 0;
+        pair<ll, ll> pre = mp(0, 0);
+        for(ll i=0; i<n; i++)
+        {
+            pair<ll, ll> now = pre;
+            if(s[i] == 'N')
+            {
+                now.ss++;
+            }
+            else if(s[i] == 'S')
+            {
+                now.ss--;
+            }
+            else if(s[i] == 'E')
+            {
+                now.ff++;
+            }
+            else
+            {
+                now.ff--;
+            }
+            if(mps.count(mp(pre, now)) or mps.count(mp(now, pre)))
+            {
+                sum++;
+            }
+            else
+            {
+                sum += 5;
+            }
+            mps.insert(mp(pre, now));
+            mps.insert(mp(now, pre));
+            pre = now;
+        }
+        cout << sum << endl;
     }
     return 0;
 }
