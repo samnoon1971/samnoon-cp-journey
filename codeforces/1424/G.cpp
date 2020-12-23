@@ -147,9 +147,9 @@ int main()
         }
         sort(vec.begin(), vec.end());
         ll y = -1, k = -1, freq = 0;
-        for(auto i:vec)
+        for(ll i=0; i<2*n; i++)
         {
-            ll p = i.ff, q = i.ss;
+            ll p = vec[i].ff, q = vec[i].ss;
             if(q > 0)
             {
                 freq++;
