@@ -88,18 +88,6 @@ void err(istream_iterator<string> it, T a, Args... args)
 
 ///--------------------**********----------------------------------
 
-ll compute_hash(string const& s) {
-    const int p = 31;
-    const int m = 1e9 + 9;
-    ll hash_value = 0;
-    ll p_pow = 1;
-    for (char c : s) {
-        hash_value = (hash_value + (c - 'a' + 1) * p_pow) % m;
-        p_pow = (p_pow * p) % m;
-    }
-    return hash_value;
-}
-
 ll binpow(ll a, ll b)
 {
     ll res = 1;
@@ -113,38 +101,7 @@ ll binpow(ll a, ll b)
     return res;
 }
 
-
 const ll MAXN = 2e5+10;
-
-/*
-ll pre[MAXN], suf[MAXN];
-void precomputeHashString(const string &s)
-{
-        string a, b;
-        ll n = s.size();
-        zero(pre);
-        zero(suf);
-        for(ll i=0; i<n; i++)
-        {
-            a += s[i];
-            pre[i + 1] = pre[i] + compute_hash(a);
-        }
-        for(ll i=n-1; i>=0; i--)
-        {
-            b += s[i];
-            suf[i] = suf[i + 1] + compute_hash(b);
-        }
-}
-bool isPalindrome(const string &s)
-{
-    precomputeHashString(s);
-    ll n = s.size();
-    ll m = n >> 1;
-    if(n & 1)
-        return pre[m + 1] == suf[m];
-    return pre[m + 1] == suf[m - 1];
-}
-*/
 struct disjoint{
         ll fa[MAXN];
         ll sz[MAXN];
@@ -168,12 +125,6 @@ struct disjoint{
     		return sz[n];
     	}
 };
-
-
-///--------------------**********----------------------------------
-
-///--------------------**********----------------------------------
-
 
 
 const ll N = 1e3+10;
