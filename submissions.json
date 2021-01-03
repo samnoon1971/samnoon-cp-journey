@@ -1,4 +1,22 @@
 {
+  "CF103108046": {
+    "contest_id": 1466,
+    "language": "PHP",
+    "path": "codeforces/1466/A.php",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Bovine Dilemma",
+    "problem_url": "https://codeforces.com/contest/1466/problem/A",
+    "submission_id": "CF103108046",
+    "submission_url": "https://codeforces.com/contest/1466/submission/103108046",
+    "tags": [
+      "brute force",
+      "geometry",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jan/03/2021 21:16"
+  },
   "CF103117008": {
     "contest_id": 1466,
     "language": "PHP",
