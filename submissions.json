@@ -1,4 +1,25 @@
 {
+  "CF103870883": {
+    "contest_id": 1461,
+    "language": "Node.js",
+    "path": "codeforces/1461/D.js",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Divide and Summarize",
+    "problem_url": "https://codeforces.com/contest/1461/problem/D",
+    "submission_id": "CF103870883",
+    "submission_url": "https://codeforces.com/contest/1461/submission/103870883",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "divide and conquer",
+      "implementation",
+      "sortings",
+      "*1600"
+    ],
+    "timestamp": "Jan/09/2021 16:40"
+  },
   "CF103893112": {
     "contest_id": 1462,
     "language": "Node.js",
