@@ -1,4 +1,21 @@
 {
+  "CF104522172": {
+    "contest_id": 803,
+    "language": "GNU C++17",
+    "path": "codeforces/803/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Magazine Ad",
+    "problem_url": "https://codeforces.com/contest/803/problem/D",
+    "submission_id": "CF104522172",
+    "submission_url": "https://codeforces.com/contest/803/submission/104522172",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Jan/16/2021 21:35"
+  },
   "CF104567329": {
     "contest_id": 1467,
     "language": "GNU C++17",
