@@ -193,18 +193,11 @@ int main()
         sort(a, a + n);
         for(ll i=1; i<n; i++)
         {
-            cal = gcd(cal, a[i] - a[i - 1]);
+            a[i] = a[i] - a[0];
+            cal = gcd(cal, a[i]);
         }
-        ll cnt = 0;
-        for(ll i=0; i<n; i++)
-        {
-            if((k - a[i]) % cal == 0)
-            {
-                cnt = 1;
-                break;
-            }
-        }
-        if(!cnt)
+        k -= a[0];
+        if(k % cal)
         {
             cout << "NO" << endl;
         }
