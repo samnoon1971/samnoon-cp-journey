@@ -172,6 +172,24 @@ struct disjoint{
 
 const ll N = 110;
 ll a[N], b[N];
+void solve(ll d, ll l, ll r)
+{
+    if(l > r)
+    {
+        return;
+    }
+    ll mid = l;
+    for(ll i=l; i<=r; i++)
+    {
+        if(a[i] > a[mid])
+        {
+            mid = i;
+        }
+    }
+    b[mid] = d;
+    solve(d + 1, l, mid - 1);
+    solve(d + 1, mid + 1, r);
+}
 
 int main()
 {
@@ -188,30 +206,7 @@ int main()
         {
             cin >> a[i];
         }
-        queue <pair<ll, pll> > q;
-        q.push(mp(0, mp(0, n - 1)));
-        while(!q.empty())
-        {
-            pair<ll, pll> cell = q.front();
-            q.pop();
-            ll L = cell.ss.ff, R = cell.ss.ss;
-            if(L > R)
-            {
-                continue;
-            }
-            ll m = L, i = L;
-            while(i <= R)
-            {
-                if(a[i] > a[m])
-                {
-                    m = i;
-                }
-                i++;
-            }
-            b[m] = cell.ff;
-            q.push(mp(b[m] + 1, mp(L, m - 1)));
-            q.push(mp(b[m] + 1, mp(m + 1, R)));
-        }
+        solve(0, 0, n - 1);
         for(ll i=0; i<n; i++)
         {
             cout << b[i] << ' ';
