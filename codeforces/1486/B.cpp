@@ -171,6 +171,12 @@ struct disjoint{
 ///--------------------**********----------------------------------
 
 
+ll solve(vector <ll> &vec)
+{
+    sort(vec.begin(), vec.end());
+    ll n = vec.size();
+    return 1 + vec[n / 2] - vec[(n - 1) / 2];
+}
 
 int main()
 {
@@ -187,11 +193,7 @@ int main()
         {
             cin >> x[i] >> y[i];
         }
-        ll ans = 1;
-        sort(x.begin(), x.end());
-        sort(y.begin(), y.end());
-        ans *= x[n / 2] - x[(n - 1) / 2] + 1;
-        ans *= y[n / 2] - y[(n - 1) / 2] + 1;
+        ll ans = solve(x) * solve(y);
         cout << ans << endl;
     }
     return 0;
