@@ -190,24 +190,24 @@ int main()
         {
             psum[i] = psum[i - 1] + (s[i - 1] == '0');
         }
-        ll ans = 1e18;
+        ll ans = 3e9;
         for(ll i=0; i<n; i++)
         {
-            if(s[i] != '0') continue;
+            if(s[i] == '1') continue;
             ll l = 0, r = n;
-            while(l <= r)
+            while(l < r)
             {
                 ll m = (l + r) >> 1;
                 ll from = max(0LL, i - m);
                 ll to = min(n - 1, i + m);
                 ll dis = psum[to + 1] - psum[from];
-                if(dis < k + 1)
+                if(dis >= k + 1)
                 {
-                    l = m + 1;
+                    r = m;
                 }
                 else
                 {
-                    r = m - 1;
+                    l = m + 1;
                 }
             }
             ans = min(ans, l);
