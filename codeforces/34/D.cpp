@@ -173,6 +173,17 @@ struct disjoint{
 const ll N = 5e4 + 10;
 vector <ll> adj[N];
 ll par[N], vis[N];
+
+void dfs(ll node, ll prev)
+{
+    if(vis[node]) return;
+    vis[node] = 1;
+    par[node] = prev;
+    for(auto child : adj[node])
+    {
+        dfs(child, node);
+    }
+}
 int main()
 {
     samnoon;
@@ -191,21 +202,7 @@ int main()
             adj[u].push_back(v);
             adj[v].push_back(u);
         }
-        queue <ll> q;
-        q.push(ry);
-        vis[ry] = 1;
-        while(!q.empty())
-        {
-            ll node = q.front();
-            q.pop();
-            for(auto child : adj[node])
-            {
-                if(vis[child]) continue;
-                vis[child] = 1;
-                par[child] = node;
-                q.push(child);
-            }
-        }
+        dfs(ry, 0);
         for(ll i=1; i<=n; i++)
         {
             if(i == ry) continue;
