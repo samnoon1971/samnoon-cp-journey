@@ -1,4 +1,23 @@
 {
+  "CF108522175": {
+    "contest_id": 734,
+    "language": "GNU C++17",
+    "path": "codeforces/734/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Anton and Making Potions",
+    "problem_url": "https://codeforces.com/contest/734/problem/C",
+    "submission_id": "CF108522175",
+    "submission_url": "https://codeforces.com/contest/734/submission/108522175",
+    "tags": [
+      "binary search",
+      "dp",
+      "greedy",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Feb/26/2021 14:17"
+  },
   "CF108522255": {
     "contest_id": 734,
     "language": "GNU C++17",

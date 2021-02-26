@@ -208,8 +208,8 @@ int main()
             ll rem = s - b[i];
             if(rem < 0)
                 continue;
-            ll l = 0, r = k + 1, eps = 100;
-            while(eps--)
+            ll l = 0, r = k + 1;
+            while(l < r - 1)
             {
                 ll mid = (l + r) >> 1;
                 if(d[mid] <= rem)
