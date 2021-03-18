@@ -170,6 +170,7 @@ struct disjoint{
 
 ///--------------------**********----------------------------------
 
+
 int main()
 {
     samnoon;
@@ -178,25 +179,54 @@ int main()
     cin >> t;
     while(t--)
     {
-        string s;
-        cin >> s;
-        ll ok = 1;
-        ll n = s.size();
-        for(ll i=1; i<n; i++)
-        {
-            if((s[i] - '0') == ok && (s[i - 1] - '0') == ok)
-            {
-                ok--;
-            }
-        }
-        if(ok == -1)
-        {
-            cout << "NO" << endl;
-        }
-        else
-        {
-            cout << "YES" << endl;
-        }
+       string s;
+       cin >> s;
+       ll n = s.size();
+       ll cx = 0, cy = 0;
+       ll cnt = 0;
+       for(ll i=1; i<n; i++)
+       {
+           if(s[i - 1] > s[i])
+           {
+               cnt = 1;
+               break;
+           }
+       }
+       if(!cnt)
+       {
+           cout << "YES" << endl;
+           continue;
+       }
+       for(ll i=1; i<n; i++)
+       {
+           if(s[i - 1] == '0')
+           {
+               if(s[i] == '0')
+               {
+                   cx = i + 1;
+               }
+           }
+           if(s[i - 1] == '1')
+           {
+               if(s[i] == '1')
+               {
+                   if(cy)
+                    continue;
+                   cy = i + 1;
+               }
+           }
+       }
+       if(cx > cy)
+       {
+           if(cx && cy)
+              cout << "NO" << endl;
+           else
+              cout << "YES" << endl;
+       }
+       else
+       {
+           cout << "YES" << endl;
+       }
     }
     return 0;
 }
