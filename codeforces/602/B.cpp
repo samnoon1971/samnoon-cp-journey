@@ -219,15 +219,24 @@ int main()
         ll ans = 0, i = 1, j = 1;
         while(i <= n)
         {
-            while(j <= i)
+            pll cnt = query(1, 1, n, j, i);
+            if(cnt.ss - cnt.ff <= 1)
             {
-                pll cnt = query(1, 1, n, j, i);
-                if(cnt.ss - cnt.ff <= 1)
-                {
-                    ans = max(ans, i - j + 1);
-                    break;
-                }
+                ans = max(ans, i - j + 1);
+            }
+            else
+            {
                 j++;
+                while(j <= i)
+                {
+                    cnt = query(1, 1, n, j, i);
+                    if(cnt.ss - cnt.ff <= 1)
+                    {
+                        ans = max(ans, i - j + 1);
+                        break;
+                    }
+                    j++;
+                }
             }
             i++;
         }
