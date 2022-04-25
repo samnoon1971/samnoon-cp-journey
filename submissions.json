@@ -1,0 +1,20 @@
+{
+  "CF154973409": {
+    "contest_id": 771,
+    "language": "GNU C++17",
+    "path": "codeforces/771/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Bear and Friendship Condition",
+    "problem_url": "https://codeforces.com/contest/771/problem/A",
+    "submission_id": "CF154973409",
+    "submission_url": "https://codeforces.com/contest/771/submission/154973409",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "*1500"
+    ],
+    "timestamp": "Apr/26/2022 01:07"
+  }
+}
