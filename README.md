@@ -1,6 +1,6 @@
 Submissions
 ======================
-> Languages: C/C++, Java, Python, NodeJS, C#, PHP
+> Languages: C/C++, Java, Python, JavaScript(NodeJS), C#, PHP
 
 ## Introduction
 
