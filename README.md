@@ -1,6 +1,6 @@
 Submissions
 ======================
-> Platform: Codeforces
+> Languages: C/C++, Java, Python, NodeJS, C#, PHP
 
 ## Introduction
 
